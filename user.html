@@ -25,6 +25,8 @@
         <div class="col-md-7 mt-4">
                 <div class="card mb-3"> <!-- start of container -->
                     <h2 class="card-header bg-info text-primary">Your Tasks</h2>
+                <div class="card mb-3"> <!-- start of container -->
+                    <h2 class="card-header bg-info text-primary">Your Tasks</h2>
                     <ul>
                         <li><a href="#" class="text-decoration-none" data-bs-toggle="modal" 
                           data-bs-target="#hairAppointmentModal">
@@ -36,8 +38,10 @@
       <div class="modal-content">
         <div class="modal-header">
 
+
           <h5 class="modal-title" id="hairAppointmentModalLabel">Schedule Hair Appointment</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div><!--header-->
         </div><!--header-->
         <div class="modal-body">
           <!-- Modal body content goes here -->
@@ -53,7 +57,14 @@
           Delete</button>
           <button type="button" class="btn btn-success" data-bs-dismiss="modal">
           Save changes</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+          Delete</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+          Save changes</button>
         </div><!-- end of modal-footer -->
+
+      </div><!--content-->
+    </div><!--dialog-->
 
       </div><!--content-->
     </div><!--dialog-->
@@ -65,7 +76,9 @@
         </div><!-- end of col-md-7 -->
             <div class="col mt-4 w-100"> <!-- start of add new task -->
                 <div class="card">
+                <div class="card">
                     <div class="row d-flex align-items-stretch">
+                      <h2 class="card-header bg-primary col-10">Add a New Task!</h2>
                       <h2 class="card-header bg-primary col-10">Add a New Task!</h2>
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-outline-primary col-2 p-0" 
@@ -95,6 +108,7 @@
                                     </label>
                                     <textarea class="form-control" rows="5" 
                                     name="taskDescription" id="taskDescription"></textarea>
+                                    name="taskDescription" id="taskDescription"></textarea>
                                   </div>
                                 </form>
                               </div><!-- end of modal-body -->
@@ -102,6 +116,10 @@
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" 
                                 data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-danger"
+                                data-bs-dismiss="modal"> Reset</button>
+                                <button type="button" class="btn btn-success"
+                                data-bs-dismiss="modal">Save changes</button>
                                 <button type="button" class="btn btn-danger"
                                 data-bs-dismiss="modal"> Reset</button>
                                 <button type="button" class="btn btn-success"
@@ -119,6 +137,8 @@
     </div> <!-- end of row -->
 <div class="row">
   <div class="col-md-7">
+    <div class="card mt-2">
+      <h2 class="card-header bg-success text-white">Completed Tasks</h2>
     <div class="card mt-2">
       <h2 class="card-header bg-success text-white">Completed Tasks</h2>
       <ul>

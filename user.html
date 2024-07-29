@@ -23,20 +23,22 @@
     </div>
     <div class="row"><!-- start of row -->
         <div class="col-md-7 mt-4">
-                <div class="container"> <!-- start of container -->
-                    <h2 class="bg-info text-primary p-2">Your Tasks</h2>
+                <div class="card mb-3"> <!-- start of container -->
+                    <h2 class="card-header bg-info text-primary">Your Tasks</h2>
                     <ul>
                         <li><a href="#" class="text-decoration-none" data-bs-toggle="modal" 
                           data-bs-target="#hairAppointmentModal">
                         Schedule hair appointment</a></li>
                         <!-- Modal -->
 <div class="modal fade" id="hairAppointmentModal" tabindex="-1">
+
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
+
           <h5 class="modal-title" id="hairAppointmentModalLabel">Schedule Hair Appointment</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
+        </div><!--header-->
         <div class="modal-body">
           <!-- Modal body content goes here -->
           <p>Start Time:</p>
@@ -47,11 +49,14 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close</button>
-          <button type="button" class="btn btn-danger">Delete</button>
-          <button type="button" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+          Delete</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+          Save changes</button>
         </div><!-- end of modal-footer -->
-      </div>
-    </div>
+
+      </div><!--content-->
+    </div><!--dialog-->
   </div>
                         <li>Make Amazon return</li>
                         <li>Pick up steak</li>
@@ -59,9 +64,9 @@
                 </div><!-- end of container -->
         </div><!-- end of col-md-7 -->
             <div class="col mt-4 w-100"> <!-- start of add new task -->
-                <div class="container">
+                <div class="card">
                     <div class="row d-flex align-items-stretch">
-                      <h2 class="bg-primary text-white p-2 col-10">Add a New Task!</h2>
+                      <h2 class="card-header bg-primary col-10">Add a New Task!</h2>
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-outline-primary col-2 p-0" 
                       data-bs-toggle="modal" data-bs-target="#addNewTaskModal">
@@ -89,8 +94,7 @@
                                     <label for="taskDescription">Task Description:
                                     </label>
                                     <textarea class="form-control" rows="5" 
-                                    name="taskDescription" id="taskDescription">
-                                    </textarea>
+                                    name="taskDescription" id="taskDescription"></textarea>
                                   </div>
                                 </form>
                               </div><!-- end of modal-body -->
@@ -98,10 +102,10 @@
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" 
                                 data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-danger">
-                                Reset</button>
-                                <button type="button" class="btn btn-success">
-                                Save changes</button>
+                                <button type="button" class="btn btn-danger"
+                                data-bs-dismiss="modal"> Reset</button>
+                                <button type="button" class="btn btn-success"
+                                data-bs-dismiss="modal">Save changes</button>
                               </div><!-- end of modal-footer -->
 
                             </div><!-- end of modal-content -->
@@ -115,8 +119,8 @@
     </div> <!-- end of row -->
 <div class="row">
   <div class="col-md-7">
-    <div class="container">
-      <h2 class="bg-success text-white p-2">Completed Tasks</h2>
+    <div class="card mt-2">
+      <h2 class="card-header bg-success text-white">Completed Tasks</h2>
       <ul>
         <li>Doctor's appointment on 11/15</li>
         <li>Pay rent by 11/1</li>

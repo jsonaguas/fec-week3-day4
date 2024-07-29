@@ -26,7 +26,8 @@
                 <div class="container"> <!-- start of container -->
                     <h2 class="bg-info text-primary p-2">Your Tasks</h2>
                     <ul>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#hairAppointmentModal">
+                        <li><a href="#" class="text-decoration-none" data-bs-toggle="modal" 
+                          data-bs-target="#hairAppointmentModal">
                         Schedule hair appointment</a></li>
                         <!-- Modal -->
 <div class="modal fade" id="hairAppointmentModal" tabindex="-1">
@@ -44,9 +45,11 @@
           <p>Notes: </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-success">Save changes</button>
+        </div><!-- end of modal-footer -->
       </div>
     </div>
   </div>
@@ -69,25 +72,37 @@
                             <div class="modal-content">
                               <div class="modal-header">
                                 <h5 class="modal-title">Add New Task</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                <button type="button" class="btn-close" 
+                                data-bs-dismiss="modal"></button>
                               </div>
 
                               <div class="modal-body">
                                 <form>
                                   <div class="mb-2 mt-2">
                                     <label for="taskName">Task Name:</label>
-                                    <input type="text" class="form-control" id="taskName">
+                                    <input type="text" class="form-control" 
+                                    id="taskName">
                                   </div> <!--end of task name-->
                                 </form>
                                 <form>
                                   <div class="mb-2 mt-2">
-                                    <label for="taskDescription">Task Description:</label>
+                                    <label for="taskDescription">Task Description:
+                                    </label>
                                     <textarea class="form-control" rows="5" 
                                     name="taskDescription" id="taskDescription">
                                     </textarea>
                                   </div>
                                 </form>
                               </div><!-- end of modal-body -->
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" 
+                                data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-danger">
+                                Reset</button>
+                                <button type="button" class="btn btn-success">
+                                Save changes</button>
+                              </div><!-- end of modal-footer -->
 
                             </div><!-- end of modal-content -->
                           </div><!-- end of modal-dialog -->

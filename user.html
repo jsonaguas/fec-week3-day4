@@ -61,7 +61,8 @@
                       <h2 class="bg-primary text-white p-2 col-10">Add a New Task!</h2>
                       <!-- Button trigger modal -->
                       <button type="button" class="btn btn-outline-primary col-2 p-0" 
-                      data-bs-toggle="modal" data-bs-target="#addNewTaskModal"> +</button>
+                      data-bs-toggle="modal" data-bs-target="#addNewTaskModal">
+                      <h3>+</h3></button>
                         <!-- Modal -->
                         <div class="modal" id="addNewTaskModal">
                           <div class="modal-dialog">
@@ -72,15 +73,21 @@
                               </div>
 
                               <div class="modal-body">
-                                <p> Task Name</p>
                                 <form>
-                                  <input type="text" class="form-control">
+                                  <div class="mb-2 mt-2">
+                                    <label for="taskName">Task Name:</label>
+                                    <input type="text" class="form-control" id="taskName">
+                                  </div> <!--end of task name-->
                                 </form>
-                                <p> Task Description</p>
                                 <form>
-                                  <input type="text" class="form-control">
+                                  <div class="mb-2 mt-2">
+                                    <label for="taskDescription">Task Description:</label>
+                                    <textarea class="form-control" rows="5" 
+                                    name="taskDescription" id="taskDescription">
+                                    </textarea>
+                                  </div>
                                 </form>
-                              </div>
+                              </div><!-- end of modal-body -->
 
                             </div><!-- end of modal-content -->
                           </div><!-- end of modal-dialog -->

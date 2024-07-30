@@ -11,3 +11,6 @@ at the top and then completed tasks underneath. On the side at the same level as
 tasks to complete, I added a button for a user to create a new task. I utilized
 modals because I thought some actions were redundant to bring to an entirely
 new page. 
+
+Link to video presentation:
+https://www.loom.com/share/3c23bdf6f9e14912b38e9475447038fc?sid=c42959eb-3cc4-44a2-ab39-210380aa3329
